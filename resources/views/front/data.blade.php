@@ -23,7 +23,7 @@
                             @if($row->settings->require_email_verification)
                                 <span class="alert alert-info p-1 px-3">
                                     <small>
-                                    You must have a valid email for verification to take this surver.
+                                    You must have a valid email for verification to take this survey.
                                     </small>
                                 </span>
                             @endif
