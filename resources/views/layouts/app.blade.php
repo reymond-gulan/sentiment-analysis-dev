@@ -454,7 +454,7 @@
                                     <a class="nav-link" href="/admin/questions">SURVEY QUESTIONNAIRES</a>
                                 </li>
                                 <li class="nav-item small">
-                                    <a class="nav-link" href="/admin/answers">MANAGE ANSWERS</a>
+                                    <a class="nav-link" href="/admin/answers">CRITERIA</a>
                                 </li>
                                 <li class="nav-item small">
                                     <a class="nav-link" href="/admin/offices">OFFICES</a>

@@ -8,6 +8,7 @@ use Illuminate\Database\QueryException;
 
 use App\Http\Requests\CampusesRequest;
 use App\Models\Campus;
+use App\Models\Setting;
 use App\Classes\AppHelper;
 
 
@@ -38,8 +39,13 @@ class CampusesController extends Controller
                 Campus::where('id', $key['id'])->update($data);
                 $message = AppHelper::updated();
             } else {
-                Campus::create($data);
+                $campus = Campus::create($data);
                 $message = AppHelper::saved();
+
+                Setting::create([
+                    'require_email_verification' => true,
+                    'campus_id' => $campus->id
+                ]);
             }
             
             return response()->json([
@@ -56,7 +62,9 @@ class CampusesController extends Controller
         $id = $request->input('id');
         $data = Campus::find($id);
         try {
-
+            
+            Setting::where('campus_id', $id)->delete();
+            
             $data->delete();
             
             return response()->json([
