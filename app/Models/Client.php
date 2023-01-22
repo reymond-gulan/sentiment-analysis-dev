@@ -23,7 +23,8 @@ class Client extends Model
         'college_id',
         'office_id',
         'campus_id',
-        'deleted_at'
+        'semester',
+        'deleted_at',
     ];
 
     public function courses()

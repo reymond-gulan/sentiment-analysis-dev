@@ -111,8 +111,13 @@
                 <div class="row mt-5">
                     <div class="col-sm-12">
                         <div class="container">
+                            <center>
                             <b>Comments / Suggestions for improvement</b><br />
-                            <textarea name="comment" id="comment" class="w-100 rounded" placeholder="Please add your comments / suggestions here." rows="10" required
+                            <p class="alert alert-info my-4">
+                                <i class="fa fa-info-circle"></i> Please use <b>ENGLISH</b> in writing your comments/suggestions. Thank you!
+                            </p>
+                            </center>
+                            <textarea name="comment" id="comment" class="w-100 rounded p-4" placeholder="Please add your comments / suggestions here." rows="10" required
                              style="resize:none;"></textarea>
                         </div>
                     </div>

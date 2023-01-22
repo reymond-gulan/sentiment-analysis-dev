@@ -32,6 +32,7 @@ class ClientsRequest extends FormRequest
             'course_id' => 'required',
             'college_id' => 'required',
             'office_id' => 'required',
+            'semester' => 'required',
             'deleted_at' => 'nullable',
         ];
     }

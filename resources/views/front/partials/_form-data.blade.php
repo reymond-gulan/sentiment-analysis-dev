@@ -33,6 +33,16 @@
     </select>
 </div>
 
+<div class="col-sm-2 mt-2">
+    <label for="semester" class="text-right">Semester: </label>
+    <select class="form-select select2 w-100 small" name="semester" id="semester" required>
+        <option value="" disabled selected>SELECT</option>
+        <option value="1ST SEMESTER">1ST SEMESTER</option>
+        <option value="2ND SEMESTER">2ND SEMESTER</option>
+        <option value="MID YEAR">MID YEAR</option>
+    </select>
+</div>
+
 <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script>
     $(document).ready(function(){
